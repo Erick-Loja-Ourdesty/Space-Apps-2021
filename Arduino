@@ -1,0 +1,44 @@
+char c = ' ';
+int LED47=47;
+void setup() 
+{
+    Serial.begin(9600);
+    Serial.println("Arduino listo");
+    Serial.println("Recuerda seleccionar Ambos NL & CR en el monitor serial");
+    pinMode(2,OUTPUT); //Pin para control del Reset del modulo HC05
+    digitalWrite(13, LOW);
+    delay(200);
+    digitalWrite(13, HIGH);
+    // El modulo HC-05 tiene por defecto el Baud rate a 38400 en el modo AT 
+    Serial1.begin(38400);  
+    pinMode(LED47, OUTPUT);
+    digitalWrite(LED47,HIGH);
+    delay(2000);
+    digitalWrite(LED47,LOW);
+    delay(2000);
+    digitalWrite(LED47,HIGH);
+}
+ 
+void loop()
+{ 
+    // Esperar respuesta del modulo HC-05 y se envia a el monitor serial
+    if (Serial1.available())
+    {  
+        c = Serial1.read();
+        Serial.write(c);
+        Serial.println(int(c));  
+        if(int(c)==-1){
+          digitalWrite(LED47,LOW);
+        }
+        if(int(c)==-4){
+          digitalWrite(LED47,HIGH);
+        }
+    }
+    // Esperar codigos enviados por el monitor serial y se envian a el modulo HC-05
+    if (Serial.available())
+    {
+        c =  Serial.read();
+        Serial1.write(c);
+        Serial1.println(String(c));  
+    }
+}
