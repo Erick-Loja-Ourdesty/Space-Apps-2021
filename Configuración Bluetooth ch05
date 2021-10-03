@@ -1,0 +1,7 @@
+AT                    --> OK
+AT+VERSION?           --> +VERSION:2.0-20100601  //PUEDE SALIR OTRO ES DEL DISPOSITIVO
+AT+NAME=GREDISFLEX    --> OK
+AT+UART=115200,0,0    --> OK
+AT+ROLE?              --> OK
+AT+PSWD=1234          --> OK
+AT+RESET              --> OK
