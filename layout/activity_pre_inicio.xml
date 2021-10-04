@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pre_inicio">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="CREAR ID Y CLAVE"
+        android:textColor="@color/blanco_transparente"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="151sp"
+        android:layout_height="129sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@drawable/img_user_1" />
+
+    <EditText
+        android:id="@+id/etDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_4"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/color_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <EditText
+        android:id="@+id/etContra1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31sp"
+        android:backgroundTint="@color/color_4"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/color_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etDni"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etDni"
+        app:layout_constraintTop_toBottomOf="@+id/etDni"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etContra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29sp"
+        android:backgroundTint="@color/color_4"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/color_4"
+        app:layout_constraintEnd_toEndOf="@+id/etContra1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etContra1"
+        app:layout_constraintTop_toBottomOf="@+id/etContra1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="63sp"
+        android:layout_height="41sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="DNI:"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/color_4"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="117sp"
+        android:layout_height="37sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="CONTRASEÑA:"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/color_4"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView1Hora"
+        android:layout_width="117sp"
+        android:layout_height="37sp"
+        android:layout_marginTop="32dp"
+        android:text="REPETIR  CONTRASEÑA:"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/color_4"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        style="@style/boton_marron_obscuro"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
+        android:text="@string/aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
