@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">OURDESTY</string>
+    <string name="bienvenida">BIENVENIDO</string>
+    <string name="textview">TextView</string>
+    <string name="parrafo1Binvenida">"Viajes en el espacio, expediciones en zonas áridas, hambre en zonas olvidadas, incremento de la contaminación son el principal medio el cual combatir, ¿nos ayudarías?"</string>
+    <string name="imagen_bebe">TODO</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="entiendo">ENTIENDO</string>
+
+    <!-- Segundo activity -->
+    <string name="tvImgTiempos">Tiempos de germinación</string>
+    <string name="tvImgCheck">Información sobre cultivos</string>
+    <string name="tvImglista">Administración de perfiles</string>
+    <string name="tvImgTargeta">Sistema de apoyo global</string>
+    <string name="tvImgUbicacion">Control total desde este APP</string>
+
+    <!-- Segundo activity -->
+    <string name="tvInformac">Los procesos son automátizados al momento de elegír una semilla, pero aveces no siempre es verídico por los cambios ambientales, es por ello que se ofrece el control de las fnciones principales del sistema de siembra,</string>
+
+    <string name="irLogueo">Tu cuenta ha sido creado con éxito? Ingresa</string>
+    <string name="textoInfoMenuRegistro">Por favor, introduzca sus datos respectivos en las siguientes casillas y seleccione las opciones correctas</string>
+    <string name="actualizar_datos_1">Actualizar datos 1</string>
+    <string-array name="names">
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Instituto</item>
+        <item>Universidad</item>
+        <item>Post Grado</item>
+        <item>Maestria</item>
+    </string-array>
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <string name="title_activity_registrar_vacuna">Registrar_vacuna</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="acerca_de_realiza_la_empresa">acerca de realiza la empresa</string>
+    <string name="quienes_somos">Quienes Somos</string>
+    <string name="mision">Mision</string>
+    <string name="vision">Vision</string>
+    <string name="quienes_somos1">Somos líderes dando servicios a las compañías más grandes de diferentes sectores, incluyendo: telecomunicaciones, finanzas, salud, minoristas, administración pública, nativas digitales, entre otras.</string>
+    <string name="misionr">Erp Cube es una ONG creado por estudiantes peruanos para administrar y gestionar los procesos de vacunación en los hospitales. Contamos con una infraestructura y tecnología adecuada que nos permite distinguirnos por la excelencia en la gestion de procesos medicos, por el interés en el desarrollo humanitario y profesional de los pacientes y por fomentar las prácticas de responsabilidad social”</string>
+    <string name="vision1">Visión</string>
+    <string name="svision">«Creemos que existimos para hacer excelentes productos y nos enfocamos en la innovación. Creemos en lo simple, no en lo complejo. Creemos que debemos controlar las tecnologías detrás de los procesos de la atención de vacunación, y participar solo en los mercados donde podemos hacer una contribución significativa. Creemos en decir “no” a miles de proyectos, para que podamos enfocarnos realmente en los pocos que son realmente importantes y significativos para nosotros». </string>
+    <string name="a">a</string>
+    <string-array name="vacunas">
+        <item>BCG(Tuberculosis)</item>
+        <item>HVB(Anti-hepatitis)</item>
+        <item>Antipolio</item>
+        <item>Pentavalente</item>
+        <item>Neumococo</item>
+        <item>Rotavirus</item>
+        <item>Influenza</item>
+        <item>SPR(sarampion papera Rubeola)</item>
+        <item>Varicela</item>
+        <item>Refuerzos</item>
+        <item>Antiamarilica</item>
+        <item>Otros</item>
+    </string-array>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
