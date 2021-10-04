@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_acercade"
+    tools:context=".acerca">
+
+    <TextView
+        android:id="@+id/textView26"
+        style="@style/titulo"
+        android:layout_width="69dp"
+        android:layout_height="45dp"
+        android:text="ERP"
+        tools:layout_editor_absoluteX="92dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACERCA DE"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/contenedor_acerca_de"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RadioGroup
+        android:layout_width="353dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedor_acerca_de">
+
+        <RadioButton
+            android:id="@+id/rbQuienesSomos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quienes_somos" />
+
+        <RadioButton
+            android:id="@+id/rbMision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mision" />
+
+        <RadioButton
+            android:id="@+id/rbVision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vision" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
